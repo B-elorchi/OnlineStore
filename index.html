@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Food Websit</title>
+		<!-- Website Icon -->
+		<link
+			rel="shortcut icon"
+			href="./images/fast-food.png"
+			type="image/x-icon"
+		/>
+		<!-- Font Awsoem Link -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Swiper css file -->
+		<link rel="stylesheet" href="./css/styls.css">
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+		<!-- Css Custom File -->
+		<link rel="stylesheet" href="./css/stayle.css" />
+	</head>
+	<body>
+		<div class="over"></div>
+		<!-- Start Header and NavBare -->
+		<header id="header">
+			<div class="logo">
+				<i class="fas fa-bars" id="menu-slid"></i>
+				<a href="#"> Shop</a>
+			</div>
+			<div class="nav tab-mode" id="nav">
+				<ul>
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">links</a></li>
+					<li><a href="">Acount</a></li>
+				</ul>
+			</div>
+			<div class="icons">
+				<i class="far fa-user-circle" id="login-form"></i>
+				<i class="fas fa-bars" id="menu-barse"></i>
+				<i class="fas fa-search" id="search-icon"></i>
+				<div class="heart">
+					<i class="far fa-heart"></i>
+					<span class="wish"></span>
+				</div>
+				<div class="heart">
+					<i class="fas fa-shopping-cart" id="addToCart"></i>
+					<span class="cart">0</span>
+				</div>
+			</div>
+		</header>
+		<div class="box-cart" id="cart-add"></div>
+		<div class="nav-mobile">
+			<img src="./house.png" alt="" />
+			<img src="./email.png" alt="" />
+			<img src="./information-button.png" alt="" />
+			<img src="./link.png" alt="" />
+		</div>
+		<form action="" class="search">
+			<i class="fas fa-close" id="close-search"></i>
+			<input type="search" placeholder="example : food" id="search" />
+			<label for="search" class="fas fa-search"></label>
+		</form>
+		<!-- End Header and NavBare -->
+		<!-- Start Acount Login And Register -->
+		<!-- -----------Login------------------ -->
+		<div class="myacount" id="myacount">
+			<form action="GET">
+				<span class="fas fa-close closeF"></span>
+				<input type="text" placeholder="username or email" />
+				<i class="fas fa-user"></i><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+				<input type="submit" value="Login" />
+				<a href="reset password" class="a">reset password</a>
+
+				<span id="register-acount" class="a">create acounte</span>
+			</form>
+		</div>
+		<!-- -----------End Login------------------ -->
+		<!-- -----------Register------------------ -->
+		<div class="register" id="register">
+			<form action="GET">
+				<span class="fas fa-close closeF-2"></span>
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="username" /> <br /><br />
+				<input type="text" placeholder="Email" /> <i class="fas fa-envelope"></i
+				><br /><br />
+				<input type="password" placeholder="password" />
+				<i class="fas fa-lock"></i>
+				<br /><br />
+				<input type="password" placeholder="Confirm password" />
+				<i class="fab fa-expeditedssl"></i>
+				<br /><br />
+
+				<div class="gender">
+					<input type="radio" name="gen" id="male" checked />
+					<label for="male">Male</label>
+					<input type="radio" name="gen" id="famle" />
+					<label for="famle">Famle</label>
+				</div>
+				<br /><br />
+				<input type="submit" value="Register" />
+				<span id="login-acount" class="a">Login</span>
+			</form>
+		</div>
+		<!-- -----------End Register------------------ -->
+		<!-- End Acount Login And Register -->
+		<!-- Start Main And Product -->
+		<section class="section" id="section">
+			<div class="slider">
+				<!-- Swiper -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="flex-box">
+								<div class="content">
+									<h3>Lorem ipsum dolor</h3>
+									<span>yalla shoot</span>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+										molestias voluptatibus illo quis tenetur,
+									</p>
+									<a href="" class="btn">Shop Now</a>
+								</div>
+								<div class="image">
+									<img src="./images/home-img-1.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="flex-box">
+								<div class="content">
+									<h3>Lorem ipsum dolor</h3>
+									<span>yalla shoot</span>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+										molestias voluptatibus illo quis tenetur,
+									</p>
+									<a href="" class="btn">Shop Now</a>
+								</div>
+								<div class="image">
+									<img src="./images/dish-1.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="flex-box">
+								<div class="content">
+									<h3>Lorem ipsum dolor</h3>
+									<span>yalla shoot</span>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+										molestias voluptatibus illo quis tenetur,
+									</p>
+									<a href="" class="btn">Shop Now</a>
+								</div>
+								<div class="image">
+									<img src="./images/home-img-2.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="flex-box">
+								<div class="content">
+									<h3>Lorem ipsum dolor</h3>
+									<span>yalla shoot</span>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+										molestias voluptatibus illo quis tenetur,
+									</p>
+									<a href="" class="btn">Shop Now</a>
+								</div>
+								<div class="image">
+									<img src="./images/home-img-3.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- End Swiper JS -->
+			</div>
+		</section>
+		<!-- End Main And Product -->
+		<div class="product-box hidden top-pro">
+			<div class="container hidden grid">
+				<div class="item-info">
+					<img src="./image/book-2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<div class="item-info">
+					<img src="./img/cloth1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+
+							<input type="number" value="1" min="1" step="1" />
+
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/cloth2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./image/book-1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/shirt3.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/shoe2.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch1.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./img/watch4.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+			</div>
+		</div>
+		<!-- End Section Product -->
+		<!-- Start Ctégorie  meni left -->
+		<!-- -------Start SEction Product And Ctégorie------------ -->
+		<div class="product-categorie">
+			<div class="cat-col-1">
+				<h3>Catégorie</h3>
+				<h4>Vêtements & Chaussures</h4>
+				<ul class="colm-1">
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+					<li><a href="">Mode De Enfant</a></li>
+				</ul>
+				<hr />
+				<h4>Genre</h4>
+				<div>
+					<input type="checkbox" id="homme" /> <label for="homme">Homme</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="bebe" /> <label for="bebe">Bébé</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="femme" /> <label for="femme">Femme</label>
+				</div>
+				<!-- -- -->
+				<div>
+					<input type="checkbox" id="femmle" />
+					<label for="femmle">Femmle</label>
+				</div>
+				<!-- -- -->
+
+				<hr />
+				<h4>ÉVALUATION CLIENTS</h4>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<div class="sta">
+					<input type="radio" name="stars" id="radioBtn" />
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<span>et plus</span>
+				</div>
+
+				<hr />
+				<h4>Prix</h4>
+				<div class="rand">
+					<input type="range" min="4" max="100000" value="4" />
+				</div>
+				<div class="inp">
+					<input
+						type="number"
+						name="number"
+						id=""
+						min="1"
+						max="10000"
+						placeholder="min"
+						value="1"
+					/>
+					-
+					<input
+						type="number"
+						min="1000"
+						max="100000"
+						placeholder="max"
+						value="10000"
+					/>
+				</div>
+
+				<div class="taille">
+					<h4>Taille</h4>
+					<div><input type="checkbox" id="S" /> <label for="S">S</label></div>
+					<!-- -- -->
+					<div><input type="checkbox" id="L" /> <label for="L">L</label></div>
+					<!-- -- -->
+					<div><input type="checkbox" id="M" /> <label for="M">M</label></div>
+					<!-- -- -->
+					<div>
+						<input type="checkbox" id="XL" />
+						<label for="XL">XL</label>
+					</div>
+					<div>
+						<input type="checkbox" id="XXL" />
+						<label for="XXL">XXL</label>
+					</div>
+					<div>
+						<input type="checkbox" id="XXXL" />
+						<label for="XXXL">XXXL</label>
+					</div>
+					<!-- -- -->
+				</div>
+			</div>
+			<!-- End Ctégorie  meni left -->
+			<div class="cat-col-2">
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+				<div class="product-list hidden flex">
+					<img src="./images/book-5.png" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<p>
+							<b>Product-Name</b> Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Corporis praesentium optio laborum animi debitis
+							<br />
+							placeat deserunt magni culpa asperiores.
+						</p>
+						<div class="starts">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half"></i>
+						</div>
+					</div>
+
+					<div class="add-cart">
+						<div class="newPri">1290$</div>
+
+						<div class="new">
+							<span>$12000</span>
+							<span>-60%</span>
+						</div>
+						<input type="number" value="1" min="1" step="1" />
+						<button class="cart-Two">ADD to Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- -------End SEction Product And Ctégorie------------ -->
+		<!-- about section starts  -->
+
+		<section class="about" id="about">
+			<h3 class="sub-heading">about us</h3>
+			<h1 class="heading">why choose us?</h1>
+
+			<div class="row">
+				<div class="image">
+					<img src="images/about-img.png" alt="" />
+				</div>
+
+				<div class="content">
+					<h3>best food in the country</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+						sequi corrupti corporis quaerat voluptatem ipsam neque labore modi
+						autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio
+						corporis nihil!
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+						nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.
+					</p>
+					<div class="icons-container">
+						<div class="icons">
+							<i class="fas fa-shipping-fast"></i>
+							<span>free delivery</span>
+						</div>
+						<div class="icons">
+							<i class="fas fa-dollar-sign"></i>
+							<span>easy payments</span>
+						</div>
+						<div class="icons">
+							<i class="fas fa-headset"></i>
+							<span>24/7 service</span>
+						</div>
+					</div>
+					<a href="#" class="btn">learn more</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- about section ends -->
+		<!-- ------------Start Riview and Spensore -->
+
+		<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h3 class="sub-heading"> customer's review </h3>
+    <h1 class="heading"> what they say </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- review section ends -->
+		<!-- ------------end Riview and Spensore -->
+		<!-- ----------------Start Footer--------------- -->
+		<footer class="footer hidden" id="footer">
+			<div class="container">
+				<div class="footer-section">
+					<div class="footer-box">
+						<h3>About Us</h3>
+						<div class="links">
+							<a href="#">About Us </a>
+							<a href="#">Delivery</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Custom Links</a>
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Custom Links</a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Customer Service</h3>
+						<div class="links">
+							<a href="#">Unlimited Links</a>
+							<a href="#">Brands</a>
+							<a href="#">Returns</a>
+							<a href="#">Contact</a>
+							<a href="#">Custom Links</a>
+							<a href="#">Contact</a>
+							<a href="#">Custom Links</a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>My Account</h3>
+						<div class="links">
+							<a href="#">Newsletter</a>
+							<a href="#">Affiliates</a>
+							<a href="#">Order History</a>
+							<a href="#">shop now</a>
+							<a href="#">My Account</a>
+							<a href="#">Order History</a>
+							<a href="#">shop now</a>
+						</div>
+					</div>
+					<div class="footer-box">
+						<h3>Contact me</h3>
+						<div class="contact">
+							<input type="text" placeholder="Full name" /><br />
+							<input type="text" placeholder="your email" /><br />
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="your feed back"
+							></textarea
+							><br />
+							<input type="checkbox" name="" id="" />
+							I have read and agree to the <a href="#">Privacy Policy</a>
+							<br />
+							<br />
+							<a href="mailto:dalamamir118@gmail.com" class="send">Send</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<footer class="last-footer hidden">
+			<div class="container">
+				<div class="flex-footer">
+					<div class="copyright">
+						<p>Copyright &copy; 2022 Made By Elorchi Brahim</p>
+					</div>
+					<div class="footer-icons">
+						<a
+							href="https://www.facebook.com/profile.php?id=100076437191234"
+							target="_blank"
+							><i class="fab fa-facebook"></i
+						></a>
+						<a href=" https://wa.me/+212608986772" target="_blank"
+							><i class="fab fa-whatsapp" target="_blank"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/brahim-elorchi-38aa921b3/"
+							target="_blank"
+							><i class="fab fa-linkedin"></i
+						></a>
+						<a href="https://github.com/B-elorchi" target="_blank">
+							<i class="fab fa-github"></i
+						></a>
+					</div>
+					<div class="mony">
+						<h5>we Acepte:</h5>
+						<img src="./images/payment.png" alt="pyament" />
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- End Footer -->
+		<!-- End Footer  -->
+
+		<!-- Swiper Js -->
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<!-- JavaScript Custom File -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>
