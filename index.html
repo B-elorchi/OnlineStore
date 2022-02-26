@@ -19,8 +19,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<!-- Swiper css file -->
-		<link rel="stylesheet" href="./css/styls.css">
+		<!-- Swiper css file  - -->
+		<link rel="stylesheet" href="./css/style.css">
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -29,10 +29,11 @@
 		<link rel="stylesheet" href="./css/stayle.css" />
 	</head>
 	<body>
+		<a href="#top" class="to-top"><i class="fas fa-angle-double-up"></i></a>
 		<div class="over"></div>
 		<!-- Start Header and NavBare -->
 		<header id="header">
-			<div class="logo">
+			<div class="logo" id="home">
 				<i class="fas fa-bars" id="menu-slid"></i>
 				<a href="#"> Shop</a>
 			</div>
@@ -59,12 +60,14 @@
 				</div>
 			</div>
 		</header>
-		<div class="box-cart" id="cart-add"></div>
+		<div class="box-cart" id="cart-add">
+			<i class="fa-solid fa-xmark"></i>
+		</div>
 		<div class="nav-mobile">
-			<img src="./house.png" alt="" />
-			<img src="./email.png" alt="" />
-			<img src="./information-button.png" alt="" />
-			<img src="./link.png" alt="" />
+			<a href="#home"><img src="./house.png" alt="" /></a>
+			<a href="#contact"><img src="./email.png" alt="" /></a>
+			<a href="#about"><img src="./information-button.png" alt="" /></a>
+			<a href="#footer"><img src="./link.png" alt="" /></a>
 		</div>
 		<form action="" class="search">
 			<i class="fas fa-close" id="close-search"></i>
@@ -195,11 +198,20 @@
 				<!-- End Swiper JS -->
 			</div>
 		</section>
+		<!-- Start Heading and Product -->
+		<section class="section">
+			<h1>Top Product of future</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore corrupti molestiae, iste similique dolorum aut nisi laudantium earum tenetur quam, neque impedit error, quasi velit hic itaque perferendis dolorem.
+			</p>
+		</section>
+
 		<!-- End Main And Product -->
+		
 		<div class="product-box hidden top-pro">
 			<div class="container hidden grid">
 				<div class="item-info">
-					<img src="./image/book-2.png" alt="" />
+					<img src="./food/th (1).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -226,7 +238,7 @@
 					</div>
 				</div>
 				<div class="item-info">
-					<img src="./img/cloth1.png" alt="" />
+					<img src="./food/th (15).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -250,41 +262,13 @@
 
 							<input type="number" value="1" min="1" step="1" />
 
-							<i class="fa fa-heart liks"></i>
-						</div>
-					</div>
-				</div>
-				<!-- ---- -->
-				<div class="item-info">
-					<img src="./img/cloth2.png" alt="" />
-					<div class="info">
-						<h4>Product Name</h4>
-						<span class="sale">-85%</span>
-						<div class="price">
-							<span class="old-price">$2200</span>
-							<span class="new-price" data-price="1200">$1200</span>
-						</div>
-						<div class="icon-n">
-							<div class="stars">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-							</div>
-							<span>(443)</span>
-						</div>
-
-						<div class="col-1">
-							<button class="btn add">Add to Cart</button>
-							<input type="number" value="1" min="1" step="1" />
 							<i class="fa fa-heart liks"></i>
 						</div>
 					</div>
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./image/book-1.png" alt="" />
+					<img src="./food/th (13).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -312,7 +296,7 @@
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./img/shirt3.png" alt="" />
+					<img src="./food/th (12).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -340,7 +324,7 @@
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./img/shoe2.png" alt="" />
+					<img src="./food/th (11).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -368,7 +352,7 @@
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./img/watch1.png" alt="" />
+					<img src="./food/th (16).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -396,7 +380,35 @@
 				</div>
 				<!-- ---- -->
 				<div class="item-info">
-					<img src="./img/watch4.png" alt="" />
+					<img src="./food/th (18).jpg" alt="" />
+					<div class="info">
+						<h4>Product Name</h4>
+						<span class="sale">-85%</span>
+						<div class="price">
+							<span class="old-price">$2200</span>
+							<span class="new-price" data-price="1200">$1200</span>
+						</div>
+						<div class="icon-n">
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span>(443)</span>
+						</div>
+
+						<div class="col-1">
+							<button class="btn add">Add to Cart</button>
+							<input type="number" value="1" min="1" step="1" />
+							<i class="fa fa-heart liks"></i>
+						</div>
+					</div>
+				</div>
+				<!-- ---- -->
+				<div class="item-info">
+					<img src="./food/th (4).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<span class="sale">-85%</span>
@@ -556,7 +568,8 @@
 			<!-- End Ctégorie  meni left -->
 			<div class="cat-col-2">
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (1).jpg" alt="" />
+					
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -586,7 +599,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (2).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -616,7 +629,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (3).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -646,7 +659,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (4).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -676,7 +689,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (5).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -706,7 +719,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (6).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -736,7 +749,7 @@
 					</div>
 				</div>
 				<div class="product-list hidden flex">
-					<img src="./images/book-5.png" alt="" />
+					<img src="./food/th (7).jpg" alt="" />
 					<div class="info">
 						<h4>Product Name</h4>
 						<p>
@@ -811,99 +824,181 @@
 		</section>
 
 		<!-- about section ends -->
-		<!-- ------------Start Riview and Spensore -->
+		<!-- ------------Start more  products -->
+	<section class="section">
+			<h1>Top Product of future</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore corrupti molestiae, iste similique dolorum aut nisi laudantium earum tenetur quam, neque impedit error, quasi velit hic itaque perferendis dolorem.
+			</p>
+		</section>
 
-		<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h3 class="sub-heading"> customer's review </h3>
-    <h1 class="heading"> what they say </h1>
-
-    <div class="swiper-container review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-1.png" alt="">
-                    <div class="user-info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
-            </div>
-
-            <div class="swiper-slide slide">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-2.png" alt="">
-                    <div class="user-info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
-            </div>
-
-            <div class="swiper-slide slide">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-3.png" alt="">
-                    <div class="user-info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
-            </div>
-
-            <div class="swiper-slide slide">
-                <i class="fas fa-quote-right"></i>
-                <div class="user">
-                    <img src="images/pic-4.png" alt="">
-                    <div class="user-info">
-                        <h3>john deo</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.</p>
-            </div>
-
-        </div>
-
-    </div>
-    
-</section>
-
-<!-- review section ends -->
-		<!-- ------------end Riview and Spensore -->
+		<article class="article" id="article">
+			<div class="art-box">
+				<div class="pro-duct">
+					<img src="/food/th (1).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (2).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (3).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (4).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (5).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (6).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (7).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (8).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (9).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (10).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (11).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (12).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (13).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (14).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (15).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (16).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (17).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+				<div class="pro-duct">
+					<img src="/food/th (18).jpg" alt="">
+					<div class="info">
+						<h3>Food Name</h3>
+						<span class="fr">1200$</span>
+						<span>1400$</span>
+					</div>
+				</div>
+				<!-- -------- -->
+			</div>
+		</article>
+		<!-- ------------end more product -->
 		<!-- ----------------Start Footer--------------- -->
 		<footer class="footer hidden" id="footer">
 			<div class="container">
@@ -967,7 +1062,7 @@
 				</div>
 			</div>
 		</footer>
-		<footer class="last-footer hidden">
+		<footer class="last-footer hidden" id="contact">
 			<div class="container">
 				<div class="flex-footer">
 					<div class="copyright">

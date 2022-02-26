@@ -16,7 +16,6 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
-
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -28,13 +27,14 @@ section{
     padding:2rem 9%;
 }
 
+
 section:nth-child(even){
     background:#eee;
 }
 
 .sub-heading{
     text-align: center;
-    color:var(--green);
+    color:;
     font-size: 2rem;
     padding-top: 1rem;
 }

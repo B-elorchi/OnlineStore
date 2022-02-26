@@ -280,6 +280,9 @@ document.querySelectorAll(".cart-Two").forEach((e) => {
 document.querySelector("#addToCart").onclick = () => {
 	document.querySelector(".box-cart").classList.toggle("show");
 };
+document.querySelector(".fa-xmark").onclick = () => {
+	document.querySelector(".box-cart").classList.remove("show");
+};
 
 // ------------------------------------------
 var swiper = new Swiper(".review-slider", {
@@ -305,3 +308,11 @@ var swiper = new Swiper(".review-slider", {
 		},
 	},
 });
+
+window.onscroll = () => {
+	if (window.scrollY >= 1800) {
+		document.querySelector(".to-top").style.display = "block";
+	} else {
+		document.querySelector(".to-top").style.display = "none";
+	}
+};
